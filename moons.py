@@ -32,12 +32,12 @@ def phase(pos):
       7: "Waning Crescent"
    }[int(index) & 7]
 
-def main(): 
-   pos = position()
+def main(x): 
+   pos = position(x)
    phasename = phase(pos)
 
    roundedpos = round(float(pos), 3)
-   print(phasename, roundedpos)
+   return phasename
 
 if __name__=="__main__": 
    main()
